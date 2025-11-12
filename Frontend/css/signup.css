@@ -1,0 +1,99 @@
+/* Reset and body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5; /* soft light background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Signup container */
+.signup-container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 400px;
+  max-width: 90%;
+  padding: 50px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.signup-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Logo / Title */
+.logo {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #4e54c8; /* nice gradient color alternative */
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.signup-container input {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 12px 0;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.signup-container input:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 5px rgba(78, 84, 200, 0.4);
+}
+
+/* Signup button */
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(78, 84, 200, 0.4);
+}
+
+/* Footer / Links */
+.footer-text {
+  font-size: 0.85em;
+  margin-top: 20px;
+  color: #888;
+}
+
+.footer-text a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: subtle floating animation for inputs */
+@keyframes floatInput {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.signup-container input {
+  animation: floatInput 5s ease-in-out infinite;
+}

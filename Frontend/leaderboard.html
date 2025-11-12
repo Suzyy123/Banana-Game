@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banana Game Leaderboard</title>
+  <link rel="stylesheet" href="css/leaderboard.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍌 Banana Game Leaderboard</h1>
+
+    <div class="button-group">
+      <button id="clearScores">Clear Leaderboard</button>
+      <button id="back">Back</button>
+      <button id="logout">Logout</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.N.</th>
+          <th>Score</th>
+          <th>Date/Time</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody">
+        <!-- Scores will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/leaderboard.js"></script>
+</body>
+</html>
