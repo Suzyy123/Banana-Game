@@ -1,4 +1,4 @@
-// Display username from localStorage
+//from localStorage
 const username = localStorage.getItem('username') || 'Player';
 document.getElementById('usernameDisplay').textContent = username;
 // Add click events to level buttons
